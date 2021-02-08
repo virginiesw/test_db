@@ -4,10 +4,10 @@ const mysql = require('mysql')
 // 2
 const dbDetails = {
   connectionLimit : 10,
-  host     : process.env.MYSQL_HOST || 'us-cdbr-east-03.cleardb.com',
-  user     : process.env.MYSQL_USERNAME || 'b1afa243769ab9',
-  password : process.env.MYSQL_PASSWORD || '00ad52bc',
-  database : process.env.MYSQL_DATABASE || 'heroku_af083c111a7bff9'
+  host     : process.env.MYSQL_HOST || 'localhost',
+  user     : process.env.MYSQL_USERNAME || 'murphy_db_user',
+  password : process.env.MYSQL_PASSWORD || 'MyNewPass4!',
+  database : process.env.MYSQL_DATABASE || 'murphy_db'
 }
 const connection = mysql.createConnection(dbDetails)
 

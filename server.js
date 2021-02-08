@@ -1,6 +1,8 @@
 const express = require('express') 
 const database = require('./mysqlDatabase')
 
+const PORT = process.env.PORT || 3000;
+
 
 const app = express();
 // app.use(express.json())
@@ -41,8 +43,8 @@ app.get('/api/meals', (req, res) => {
 })
 
 
-app.listen(8080, () => {
-  console.log("The server is listening on port 8080")
+app.listen(PORT, () => {
+  console.log(`The server is listening on port ${PORT}.`)
 })
 
 
